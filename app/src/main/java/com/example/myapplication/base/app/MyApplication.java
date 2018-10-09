@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.base.app;
 
 import android.app.Application;
 import android.content.Context;
@@ -28,7 +28,7 @@ public class MyApplication extends Application {
          * 参数3：是否开启调试模式，调试模式下会输出'CrashReport'tag的日志
          */
 //        CrashReport.initCrashReport(getApplicationContext(), "959e7a2b08", false);
-
+        //在清单文件中配置参数
         CrashReport.initCrashReport(getApplicationContext());
     }
 

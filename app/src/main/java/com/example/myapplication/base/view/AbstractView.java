@@ -1,7 +1,9 @@
 package com.example.myapplication.base.view;
 
+import android.view.View;
+
 /**
- * Description:
+ * Description: View基类
  * Detail:
  * Create Time: 2018/8/8
  *
@@ -22,5 +24,13 @@ public interface AbstractView {
     void showEmpty();
 
     void showNeteaseLoading();
+
+    void reload();
+
+    void setVisible(View... view);
+
+    void setInvisible(View... view);
+
+    void setGone(View... view);
 
 }
